@@ -23,5 +23,6 @@ public class PrimitiveDataTypes {
 		System.out.println("Salary: " + salary);
 		System.out.println("Is on Vacation: " + isOnVacation);
 		System.out.println("Status: " + status);
+		System.out.println("Accumulated Sales" + accumulatedSales);
 	}
 }
