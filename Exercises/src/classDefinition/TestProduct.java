@@ -14,12 +14,9 @@ public class TestProduct {
 		prod2.discount = 0.25;
 		
 		System.out.println(prod1.name);
-		double finalPrice1 = prod1.price * (1 - prod1.discount);
-		System.out.println(finalPrice1);
-		
+		System.out.println(prod1.discountPrice());
 		
 		System.out.println(prod2.name);
-		double finalPrice2 = prod2.price * (1 - prod2.discount);
-		System.out.println(finalPrice2);
+		System.out.println(prod2.discountPrice(0.2));
 	}
 }
