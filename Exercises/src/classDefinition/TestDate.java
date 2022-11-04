@@ -12,8 +12,11 @@ public class TestDate {
 		dt2.month = 6;
 		dt2.year = 1996;
 		
+		FDate dt3 = new FDate();
+		
 		dt1.printFormatedDate();
 		dt2.printFormatedDate();
+		dt3.printFormatedDate();
 		
 	}
 }
