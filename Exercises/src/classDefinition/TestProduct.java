@@ -3,12 +3,13 @@ package classDefinition;
 public class TestProduct {
 	public static void main(String[] args) {
 		
-		Product prod1 = new Product("Notebook", 2399.50, 0.3);
+		Product prod1 = new Product("Notebook", 2399.50);
 		
 		var prod2 = new Product();
 		prod2.name = "Black pen";
 		prod2.price = 12.56;
-		prod2.discount = 0.25;
+		
+		Product.discount = 0.50;
 		
 		System.out.println(prod1.name);
 		System.out.println(prod1.discountPrice());

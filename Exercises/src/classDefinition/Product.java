@@ -3,7 +3,7 @@ package classDefinition;
 public class Product {
 	String name;
 	double price;
-	double discount;
+	static double discount = 0.25;
 
 	Product() {
 
@@ -13,10 +13,9 @@ public class Product {
 		name = startName;
 	}
 
-	Product(String startName, double startPrice, double startDiscount) {
+	Product(String startName, double startPrice) {
 		name = startName;
 		price = startPrice;
-		discount = startDiscount;
 	}
 
 	double discountPrice(double extraDiscount) {
