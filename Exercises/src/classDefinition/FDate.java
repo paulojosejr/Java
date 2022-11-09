@@ -1,4 +1,4 @@
-package classDefinition;
+  package classDefinition;
 
 public class FDate {
 	int day;
@@ -6,23 +6,21 @@ public class FDate {
 	int year;
 	
 	FDate() {
-		day = 1;
-		month = 1;
-		year = 1970;
+		this(1, 1, 1970);
 	}
 	
-	FDate(int fDay, int fMonth, int fYear){
-		day = fDay;
-		month = fMonth;
-		year = fYear;
+	FDate(int day, int month, int year){
+		this.day = day;
+		this.month = month;
+		this.year = year;
 	}
 				
-	String FormatedDate() {
-		//return day + "/" + month + "/" + year;
-		return String.format("%d/%d/%d", day, month, year);
+	String formatedDate() {
+		final String format = "%d/%d/%d";
+		return String.format(format, day, month, year);
 	}
 	
 	void printFormatedDate() {
-		System.out.println(FormatedDate());
+		System.out.println(this.formatedDate());
 	}
 }
