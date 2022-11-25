@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Student {
 	final String name;
-	List<Course> courses = new ArrayList<>();
+	final List<Course> courses = new ArrayList<>();
 	
 	
 	Student(String name){
@@ -17,5 +17,18 @@ public class Student {
 	void addCourse(Course course){
 		this.courses.add(course);
 		course.students.add(this);
+	}
+	
+	Course getCourseByName(String name) {
+		for(Course course: this.courses) {
+			if(course.name.equalsIgnoreCase(name)) {
+				return course;
+			}
+		}
+		return null;
+	}
+	
+	public String toString() {
+		return name;
 	}
 }
