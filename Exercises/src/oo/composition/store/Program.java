@@ -16,5 +16,6 @@ public class Program {
 		client.purchases.add(purchase2);
 		
 		System.out.println(client.getTotalValue());
+		System.out.println(client.getAverage());
 	}
 }

@@ -24,4 +24,12 @@ public class Client {
 		
 		return total;
 	}
+	
+	double getAverage() {
+		double average = 0;
+		for(Purchase purchase: purchases) {
+			average += purchase.getAverage();
+		}
+		return average;
+	}
 }

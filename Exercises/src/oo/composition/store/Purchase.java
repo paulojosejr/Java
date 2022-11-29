@@ -24,4 +24,12 @@ public class Purchase {
 		
 		return total;
 	}
+	
+	double getAverage() {
+		double average = 0;
+		for(Item item: items) {
+			average += getTotalValue() / item.quantity;
+		}
+		return average;
+	}
 }
