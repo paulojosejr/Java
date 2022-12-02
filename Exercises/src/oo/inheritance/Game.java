@@ -5,12 +5,19 @@ public class Game {
 		Player p1 = new Player();
 		p1.x = 10;
 		p1.y = 10;
-		p1.moved(Direction.NORTH);
-		p1.moved(Direction.EAST);
-		p1.moved(Direction.NORTH);
-		p1.moved(Direction.EAST);
 		
-		System.out.println(p1.y);
-		System.out.println(p1.x);
+		Player p2 = new Player();
+		p2.x = 10;
+		p2.y = 11;
+	
+		
+		System.out.println(p1.life);
+		System.out.println(p2.life);
+		
+		p1.attack(p2);
+		
+		System.out.println(p1.life);
+		System.out.println(p2.life);
+		
 	}
 }
