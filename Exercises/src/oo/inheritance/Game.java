@@ -6,18 +6,33 @@ public class Game {
 		h1.x = 10;
 		h1.y = 10;
 		
-		Creature c2 = new Creature();
-		c2.x = 10;
-		c2.y = 11;
+		Creature c1 = new Creature();
+		c1.x = 10;
+		c1.y = 11;
 	
 		
-		System.out.println(h1.life);
-		System.out.println(c2.life);
+		System.out.println("The hero have " + h1.life + " of life");
+		System.out.println("The creature have " + c1.life + " of life");
 		
-		h1.attack(c2);
+		h1.attack(c1);
+		c1.attack(h1);
 		
-		System.out.println(h1.life);
-		System.out.println(c2.life);
+		System.out.println("The hero have " + h1.life + " of life");
+		System.out.println("The creature have " + c1.life + " of life");
+		
+		h1.attack(c1);
+		c1.attack(h1);
+		
+		h1.attack(c1);
+		c1.attack(h1);
+		
+		
+		c1.move(Direction.NORTH);
+		h1.attack(c1);
+		c1.attack(h1);
+		
+		System.out.println("The hero have " + h1.life + " of life");
+		System.out.println("The creature have " + c1.life + " of life");
 		
 	}
 }

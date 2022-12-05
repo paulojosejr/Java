@@ -22,7 +22,7 @@ public class Player {
 		}
 	}
 	
-	boolean moved(Direction direction) {
+	boolean move(Direction direction) {
 		switch(direction) {
 		case NORTH:
 			y--;
