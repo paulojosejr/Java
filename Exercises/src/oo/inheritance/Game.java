@@ -8,14 +8,14 @@ public class Game {
 		c1.x = 10;
 		c1.y = 11;
 		
-		System.out.println("The hero have " + h1.life + " of life");
-		System.out.println("The creature have " + c1.life + " of life");
+		System.out.println("The hero has " + h1.life + " of life");
+		System.out.println("The creature has " + c1.life + " of life");
 		
 		h1.attack(c1);
 		c1.attack(h1);
 		
-		System.out.println("The hero have " + h1.life + " of life");
-		System.out.println("The creature have " + c1.life + " of life");
+		System.out.println("The hero has " + h1.life + " of life");
+		System.out.println("The creature has " + c1.life + " of life");
 		
 		h1.attack(c1);
 		c1.attack(h1);
@@ -27,8 +27,8 @@ public class Game {
 		h1.attack(c1);
 		c1.attack(h1);
 		
-		System.out.println("The hero have " + h1.life + " of life");
-		System.out.println("The creature have " + c1.life + " of life");
+		System.out.println("The hero has " + h1.life + " of life");
+		System.out.println("The creature has " + c1.life + " of life");
 		
 	}
 }
