@@ -2,11 +2,11 @@ package oo.inheritance;
 
 public class Creature extends Player{
 	
-	Creature(){
+	public Creature(){
 		this(0, 0);
 	}
 	
-	Creature(int x, int y){
+	public Creature(int x, int y){
 		super(x, y);
 	}
 }

@@ -2,16 +2,36 @@ package oo.inheritance;
 
 public class Player {
 	
-	int life = 100;
-	int x;
-	int y;
+	private int life = 100;
+	private int x;
+	private int y;
 	
-	Player(int x, int y){
+	protected Player(int x, int y){
 		this.x = x;
 		this.y = y;
 	}
 	
-	boolean attack(Player enemy) {
+	public int getPositionX() {
+		return x;
+	}
+	
+	public void setPositionX(int x) {
+		this.x = x;
+	}
+	
+	public int getPositionY() {
+		return y;
+	}
+	
+	public void setPositionY(int y) {
+		this.y = y;
+	}
+	
+	public int getLife() {
+		return life;
+	}
+	
+	public boolean attack(Player enemy) {
 		
 		int deltaX = Math.abs(x - enemy.x);
 		int deltaY = Math.abs(y - enemy.y);
@@ -27,7 +47,7 @@ public class Player {
 		}
 	}
 	
-	boolean move(Direction direction) {
+	public boolean move(Direction direction) {
 		switch(direction) {
 		case NORTH:
 			y--;
