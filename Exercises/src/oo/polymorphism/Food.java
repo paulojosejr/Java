@@ -1,23 +1,19 @@
 package oo.polymorphism;
 
-public class People {
+public class Food {
 	private double weight;
 	
 	public double getWeight() {
 		return weight;
 	}
 
-	public void eat(Food food) {
-		this.weight += food.getWeight();
-	}
-	
 	public void setWeight(double weight) {
 		if(weight >= 0) {
 			this.weight = weight;
 		}
 	}
 	
-	public People (double weight) {
+	public Food (double weight) {
 		this.weight = weight;
 	}
 }
