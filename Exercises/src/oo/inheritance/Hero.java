@@ -1,6 +1,6 @@
 package oo.inheritance;
 
-public class Hero extends Player implements CriticalDamage{
+public class Hero extends Player{
 	
 	public Hero(int x, int y){
 		super(x, y);
@@ -11,7 +11,6 @@ public class Hero extends Player implements CriticalDamage{
 		return attack;
 	}
 	
-	@Override
 	public boolean Critical(Player enemy) {
 		boolean attack1 = super.attack(enemy);
 		boolean attack2 = super.attack(enemy);
