@@ -21,10 +21,10 @@ public class Game {
 		System.out.println("The hero has " + h1.getLife() + " of life");
 		System.out.println("The creature has " + c1.getLife() + " of life");
 		
-		h1.attack(c1);
+		h1.Critical(c1);
 		c1.attack(h1);
 		
-		h1.attack(c1);
+		h1.SuperCritical(c1);
 		c1.attack(h1);
 		
 		c1.move(Direction.NORTH);
