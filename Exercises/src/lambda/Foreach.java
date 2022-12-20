@@ -13,10 +13,20 @@ public class Foreach {
 			System.out.println(name);
 		}
 		
-		System.out.println("\nLambda way");	
+		System.out.println("\n#01 Lambda way");	
 		approved.forEach(name -> System.out.println(name + "."));
 		
-		System.out.println("\nMethod Reference");
+		System.out.println("\n#01 Method Reference");
 		approved.forEach(System.out::println);
+		
+		System.out.println("\n#02 Lambda way");	
+		approved.forEach(name -> myPrintOut(name + "."));
+		
+		System.out.println("\n#02 Method Reference");
+		approved.forEach(Foreach::myPrintOut);
+	}
+	
+	static void myPrintOut(String name) {
+		System.out.println("Hello my name is " + name);
 	}
 }
