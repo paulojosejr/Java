@@ -9,7 +9,9 @@ public class UnaryOperators {
 		UnaryOperator<Integer> sqrt = n -> n * n;
 		
 		int result1 = plusTwo.andThen(timesTwo).andThen(sqrt).apply(0);
-		
 		System.out.println(result1);
+		
+		int result2 = sqrt.compose(timesTwo).compose(plusTwo).apply(0);
+		System.out.println(result2);
 	}
 }
